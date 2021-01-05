@@ -13,9 +13,8 @@ var model = {
 skillList.controller("skillListCtrl", function ($scope) {
   $scope.data = model;
 
-  $scope.skillName = '';
+  $scope.skillName = "";
 
-  // Обработчик нажатия по кнопке
   $scope.addNewSkill = function () {
     if ($scope.skillName.trim()) {
       $scope.data.skills.push({
